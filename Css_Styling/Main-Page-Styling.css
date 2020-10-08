@@ -1,0 +1,132 @@
+	*{
+		margin: 0;
+		padding:0;
+	}
+	body{
+	box-sizing: border-box;	
+	margin: 0 auto;
+	background-color: black;
+	cursor: grab;
+
+/*   
+	 	background: url(Images/first.png);
+        background-size: cover;*/
+	}
+	.completeplace{
+	
+/*	background: url(http://wpdemo2.oceanthemes.net/euthenia/wp-content/uploads/sites/13/2019/03/5.jpg);*/
+     
+     -webkit-background-size:cover;
+      background-size: cover;
+	}
+	
+.Titleplace{
+    display: flex;
+      white-space: nowrap;
+      overflow-x: auto;
+  -webkit-overflow-scrolling:touch;
+  padding-left: 50px;      
+}
+.img1{
+	margin-top: 150px;
+	text-align: center;
+	width: 550px;
+	height: 560px;
+/*	padding-right: 100px;
+*/}
+
+a{
+/*	margin-left: 80px;
+*/	justify-content: center;
+    margin-top: 140px;	
+	display: inline-block;
+	text-decoration:none;
+	color: DarkGray;
+}
+a:hover{
+	color: white;
+	text-decoration: none;
+}
+h1{
+	font-family: sans-serif;
+	font-size: 65px;
+}	
+
+::-webkit-scrollbar{
+	width: 0px;
+	background:transparent;
+}
+.slider{
+	cursor: pointer;
+	background-color: gray;
+	width: 620px;
+	height: 1.2px;
+	-webkit-appearance:none;
+	outline: none;
+}
+.slider::-webkit-slider-thumb{
+	-webkit-appearance:none;
+	width: 22px;
+	height: 22px;
+	background-color: white;
+	border-radius: 30px;
+}
+.slider::-webkit-slider-thumb:active{
+	box-shadow: 0 0 0 10px rgba(255,255,255,0.1);
+}
+.slidervalueplace{
+    margin-top: 620px;
+    margin-left: 700px;
+}
+.sliderplace{
+	margin-top: 660px;
+	margin-left: 450px;
+}
+.slidervalue{
+cursor: pointer;
+width: 100px;
+height: 1.2px;
+background-color: white;
+outline: none;
+-webkit-appearance:none;
+}
+.slidervalue::-webkit-slider-thumb{
+	-webkit-appearance:none;
+	background-color: white;
+	border-radius: 25px;
+}
+.left{
+	margin-top: 625px;
+	margin-left: 683px;
+	color: white;
+}
+.right{
+	margin-top: 625px;
+	margin-left: 808px;
+	color: white;
+}
+#leftvalue{
+	color: white;
+}
+.displaytitle{
+	position: fixed;
+	color: DarkGray;
+	opacity: 0.4;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 250px;
+/*	top: 0;
+*/	margin-top: 428px;
+	
+}
+#myCanvas{
+	position: absolute;
+	width: 45px;
+	height: 45px;
+	box-sizing: border-box;
+	transition: 0.3s linear;
+	border-radius: 50%;
+	background-color: white;
+	pointer-events: none;
+	overflow: show;
+}

@@ -1,0 +1,155 @@
+	body{
+		margin: 0 auto;
+		overflow: hidden;
+		cursor: grab;
+	}
+	.slideshow{
+    margin:0 auto;
+    padding-top: 100px;
+    height: 723px;
+    background-color: black;
+    box-sizing: border-box;
+	}
+	.content{
+		margin:auto;
+		perspective: 1000px;
+		padding-top: 80px;
+		width: 320px;
+		position: relative;
+	}
+
+	.content-place {
+		width: 100%;
+		position: absolute;
+		animation: rotar 10s infinite linear;
+		float: right;
+		transform-style: preserve-3d;
+	}
+	.content-place:hover{
+        animation-play-state: paused;
+        cursor: pointer;
+	}
+	.content-place figure:hover{
+		box-shadow: 0 0 10px 8px #fff; 
+	}
+	.content-place figure {
+		width: 200px;
+		height: 270px;
+		border: 1px solid #4d444d;
+		position: absolute;
+	} 
+	.content-place figure:nth-child(1){
+		transform: rotateY(0deg) translateZ(325px);
+	}
+		.content-place figure:nth-child(2){
+		transform: rotateY(36deg) translateZ(325px);
+	}
+		.content-place figure:nth-child(3){
+		transform: rotateY(72deg) translateZ(325px);
+	}
+		.content-place figure:nth-child(4){
+		transform: rotateY(108deg) translateZ(325px);
+	}
+		.content-place figure:nth-child(5){
+		transform: rotateY(144deg) translateZ(325px);
+	}	
+		.content-place figure:nth-child(6){
+		transform: rotateY(180deg) translateZ(325px);
+	}
+		.content-place figure:nth-child(7){
+		transform: rotateY(216deg) translateZ(325px);
+	}
+		.content-place figure:nth-child(8){
+		transform: rotateY(252deg) translateZ(325px);
+	}
+		.content-place figure:nth-child(9){
+		transform: rotateY(288deg) translateZ(325px);
+	}
+			.content-place figure:nth-child(10){
+		transform: rotateY(324deg) translateZ(325px);
+	}
+	.shadow{
+		position: absolute;
+		box-shadow: 0 0 10px 5px #000;
+		border-radius: 2px;
+	}
+	.content-place img{
+		image-rendering: auto;
+		transition: all 300ms;
+		position: absolute;
+		width: 200px;
+		height: 200px;
+	}
+	.content-place img:hover{
+		box-shadow: 0 0 10px 7px #fff; 
+		transform:scale(1.2);
+		transition: all 100ms;
+	}
+	span{
+		font-size: 30px;
+		position: absolute;
+		padding-top: 218px;
+		color: white;		
+	}
+	
+	@keyframes rotar{
+        from{
+        	transform:rotateY(0deg);
+        }
+        to{
+            transform:rotateY(360deg);
+        }
+	}
+	::-webkit-scrollbar{
+		width: 0;
+		background:transparent;
+	}
+	::-moz-scrollbar{
+		width: 0;
+		background:transparent;
+	}
+	::-ms-scrollbar{
+		width: 0;
+		background:transparent;
+	}		
+	.text-to-display{
+       animation: textdisplay 2s;
+       margin-left: 50px;
+       position: absolute;
+	}
+	.shadow:focus{
+		outline: none;
+		border: none;
+	}
+	@keyframes textdisplay{
+		0%{
+			left: -100%;
+			top:0;
+		}
+		50%,100%{
+top: 0;
+left: 0px;
+		}
+	}
+	.text{
+/*		margin-left: 30px;
+*/		text-shadow: 3px 3px 15px white;
+		color: white;
+		font-size: 35px;
+		font-family: cursive;
+	}
+	.one:focus{
+     outline: none;
+	}
+        #myCanvas{
+	position: absolute;
+	width: 45px;
+	height: 45px;
+	box-sizing: border-box;
+	transition: 0.3s linear;
+	border-radius: 50%;
+	opacity: 0.3;
+	background-color: white;
+	pointer-events: none;
+	overflow: show;
+}	
