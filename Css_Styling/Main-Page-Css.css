@@ -100,16 +100,10 @@ body:hover{
         font-size: 27px;
         font-family: sans-serif;
 	}
-	.footer-display{
-		position: fixed;
-		text-align: center;
-        width: auto;
-		height: 30px;
-		bottom: 50px;
-		padding-left: 35px;
-	}
+
 	.slider-place{
-		padding-left: 110px;
+		padding-top: 3px;
+		padding-left: 10px;
 		position: fixed;
 		text-align: center;
 	}
@@ -121,26 +115,33 @@ body:hover{
 		text-align: center;
 		position: fixed;
 		height: 2px;
-		width: 80px;
+		width: 70px;
 	}
 	.slider::-webkit-slider-thumb{
 		display: none;
 	}
+	.footer-display{
+		position: fixed;
+		display: inline-block;
+		align-items: center;
+		justify-content: center;
+		width: 150px;
+		height: 30px;
+		bottom: 40px;
+		left:38% ;
+	}
 	.left{
-        position: fixed;
+		font-size: 10px;
+		position: fixed;
 		color: whitesmoke;
-	    padding-left: 95px;
-    }
+	}
     .right{
         color: whitesmoke;
         position: fixed;
-        /* float: right; */
-        padding-left: 200px;
+        padding-left: 85px;
         font-size: 10px;
 	}
-	#leftvalue{
-		font-size: 10px;
-	} 
+	
 	.bar-option-container{
 		position: fixed;
 		/* float: right; */
@@ -261,17 +262,7 @@ body:hover{
 			margin: 6px 0;
 			transition: 0.4s;
 		  }
-		  .footer-display{
-			position: fixed;
-			/* background-color: orange; */
-			display: inline-block;
-			align-items: center;
-			justify-content: center;
-			width: 200px;
-			height: 50px;
-			bottom: 10px;
-			left: 38%;
-		}  
+		 
 		  .left{
 			  align-items: center;
 			  justify-content: center;
