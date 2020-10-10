@@ -63,12 +63,69 @@
     	height: 320px;
     	transition: transform 2s;
     }
-    @media only screen and (max-width:600px){
+   
+    .Box:hover .image-box img{
+    	cursor: pointer;
+    	transform: scale(1.2);
+    }
+    .info-about-image{
+    	margin-top: 20px;
+    	margin-left: 93px;
+    	width: 900px;
+    }
+    .info-about-image div p{
+    color: white;
+    }
+     ::-webkit-scrollbar{
+     	width: 0;
+     	background:transparent;
+     }
+     #more{
+     	display: none;
+     }
+     .readless-button{
+     color: LightSkyBlue;
+     border:none;
+     cursor: pointer;
+     background-color: transparent;
+     }
+     .readless-button:focus{
+     	outline: none;
+     }
+     /* .things-to-do-place{
+         width: 1000px;
+     } */
+     .things-to-do-place #try {
+        position: fixed; 
+        /* width: 100%; */
+     	height: 340px;
+     	margin-top: 5px;
+         margin-left: 80px;
+         display: flex;
+     	overflow: hidden;
+     }
+     .things-box{
+        width: 330px;
+        height: 320px;
+        margin: 10px;
+        cursor: pointer;
+        border:1px ridge rgba(255,255,255,0.1);
+       	border-radius: 10px;
+     }
+     .things-box .places-box img{
+     	border-radius: 10px;
+        width: 330px;
+        height: 240px;
+     }
+     @media only screen and (max-width:600px){
         .location-name-place{
             position: fixed;
             width: 100%;
             top: 10px;
             /* text-align: center; */
+        }
+        .hrline-display{
+
         }
         .downline {
             position: fixed;
@@ -107,41 +164,70 @@
                 height: 320px;
                 transition: transform 2s;
             }
+            .things-box .places-box img{
+               border-radius: 10px;
+               width: 340px;
+               height: 320px;
+            }
     }
-
-    .Box:hover .image-box img{
-    	cursor: pointer;
-    	transform: scale(1.2);
+     .things-place{
+     	margin-top: 70px;
+     	margin-left: 90px;
+     }
+     .textone{
+     	font-family: bold;
+     	font-size: 20px;
+     	color: white;
+     }
+     .texttwo{
+     	font-size: 14px;
+     	color: gray;
+     }
+     .places-box p{
+     	font-size: 14px;
+        text-align: center;
+     	color: white;
+     }
+     .places-box p span{
+        font-size: 18px;
+     }
+     .show-more-icon{
+          margin-top: 150px;
+     }
+     .show-more-icon .slide-more{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: white;
+     }
+     .arrow {
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        margin: 10px 9px;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+    .show-more-icon-left{
+        display: none;
+    	margin-top: 150px;
+        margin-left: 40px;
+        position: absolute;
     }
-    .info-about-image{
-    	margin-top: 20px;
-    	margin-left: 93px;
-    	width: 900px;
+    .show-more-icon-left .slide-more-left{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: white;  
     }
-    .info-about-image div p{
-    color: white;
-    }
-     ::-webkit-scrollbar{
-     	width: 0;
-     	background:transparent;
-     }
-     #more{
-     	display: none;
-     }
-     .readless-button{
-     color: LightSkyBlue;
-     border:none;
-     cursor: pointer;
-     background-color: transparent;
-     }
-     .readless-button:focus{
-     	outline: none;
-     }
-     .things-to-do-place #try {
-     	width: 1900px;
-     	height: 340px;
-     	margin-top: 5px;
-     	margin-left: 80px;
-     	overflow: hidden;
-     }
+#hideimg{
+display: none;
+}
      

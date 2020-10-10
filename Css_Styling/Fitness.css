@@ -24,32 +24,15 @@
         }    
         .Fitness-title{
             padding-top: 80px;
-            padding-left: 30px;
+            padding-left: 0px;
             position: absolute;
             font-family: sans-serif;
             font-weight: bold;
-            font-size: 55px;
+            font-size: 45px;
             width: 100%;
         }
     
-        @media only screen and (min-width:1200px){
-            .content-container{
-                position: absolute;
-                background-color: Black;
-                margin-top: 722px;
-                opacity: 0.8;
-            }
-            .content-display{
-               padding-top: 50px;
-               padding-left: 230px;
-               width: 60%;          
-                font-family: sans-serif;
-                text-align: justify-all;
-                font-size: 25px;
-                color: white;
-                
-            }
-        }
+       
         .Tip1{
             color: white;
             position: absolute;
@@ -105,6 +88,34 @@
             }
             b{
                 font-size: 24px;
+            }
+        }
+
+        @media only screen and (min-width:992px){
+            .content-container{
+                position: absolute;
+                background-color: Black;
+                margin-top: 722px;
+                width: 100%;
+                opacity: 0.8;
+            }
+            img{
+                width: 1000px;
+                height: 500px;
+            }
+            b{
+                font-size: 24px;
+            }
+            .content-display{
+               padding-top: 50px;
+               padding-left: 230px;
+               width: 75%;
+               justify-content: center;          
+                font-family: sans-serif;
+                text-align: justify-all;
+                font-size: 25px;
+                color: white;
+                
             }
         }
     button{
