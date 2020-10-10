@@ -127,13 +127,12 @@
 			top:0;
 		}
 		50%,100%{
-top: 0;
-left: 0px;
+           top: 0;
+           left: 0px;
 		}
 	}
 	.text{
-/*		margin-left: 30px;
-*/		text-shadow: 3px 3px 15px white;
+		text-shadow: 3px 3px 15px white;
 		color: white;
 		font-size: 55px;
 		font-family: cursive;
@@ -153,3 +152,19 @@ left: 0px;
 	pointer-events: none;
 	overflow: show;
 }	
+@media only screen and (min-width:992px){
+	.slideshow{
+		margin:0 auto;
+		padding-top: 80px;
+		height: 100vh;
+		background-color: black;
+		box-sizing: border-box;
+		}
+		.text{
+			text-shadow: 3px 3px 15px white;
+			color: white;
+			font-size: 45px;
+			font-family: cursive;
+		}
+	
+} 

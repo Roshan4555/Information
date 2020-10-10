@@ -219,7 +219,6 @@ body{
         color: whitesmoke;
         position: fixed;
         float: right;
-        /* margin-top: 148px; */
         right: 139px;
         font-size: 10px;
     }
@@ -227,7 +226,6 @@ body{
         position: fixed;
         justify-content: center;
         text-align: center;
-        /* margin-top: 140px; */
     }
     .website-name{
         position: fixed;
@@ -245,7 +243,6 @@ body{
     position: fixed;
     float: right;
     top: 5px;
-    /* right: 12px; */
     cursor: pointer;
 }
 .bar1, .bar2, .bar3 {
