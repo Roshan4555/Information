@@ -43,12 +43,12 @@
                     document.getElementById("left").innerHTML="06";
 				}
 
-		var mainslider=document.getElementById("sliderid");
-		var valueslider=document.getElementById("left");
-		valueslider.innerHTML=mainslider.value;
-		mainslider.oninput=function(){
-			valueslider.innerHTML=this.value;
-		}
+		// var mainslider=document.getElementById("sliderid");
+		// var valueslider=document.getElementById("left");
+		// valueslider.innerHTML=mainslider.value;
+		// mainslider.oninput=function(){
+		// 	valueslider.innerHTML=this.value;
+		// }
 		// var min = document.getElementById("slider").min;
 		// min=10;
 		function myFunction(x) {
