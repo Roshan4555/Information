@@ -22,25 +22,25 @@
 					var title3=document.getElementById("background-image-change").src="Images\\Fitness.jpg";
 				    var gettitle=document.getElementById("flex-title-display");
                     gettitle.innerHTML="Fitness";
-                    document.getElementById("leftvalue").innerHTML="03";
+                    document.getElementById("left").innerHTML="03";
 				}
 				function change3(){
 					var title4=document.getElementById("background-image-change").src="Images\\Travel.jpg";
 				    var gettitle=document.getElementById("flex-title-display");
                     gettitle.innerHTML="Travel";
-                    document.getElementById("leftvalue").innerHTML="04";
+                    document.getElementById("left").innerHTML="04";
 				}
 				function change4(){
 					var title5=document.getElementById("background-image-change").src="Images\\Hospitality.jpg";
 				    var gettitle=document.getElementById("flex-title-display");
                     gettitle.innerHTML="Hospitality";
-                    document.getElementById("leftvalue").innerHTML="05";
+                    document.getElementById("left").innerHTML="05";
 				}
 				function change5(){
 					var title6=document.getElementById("background-image-change").src="Images\\Introspection.jpg";
 				    var gettitle=document.getElementById("flex-title-display");
                     gettitle.innerHTML="Processors";
-                    document.getElementById("leftvalue").innerHTML="06";
+                    document.getElementById("left").innerHTML="06";
 				}
 
 		var mainslider=document.getElementById("sliderid");
