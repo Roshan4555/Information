@@ -11,7 +11,7 @@
 				    var gettitle=document.getElementById("flex-title-display");
                     gettitle.innerHTML="Biography";
                     // document.getElementById("distitle").style.left="140px";
-                    document.getElementById("leftvalue").innerHTML="01";
+                    document.getElementById("left").innerHTML="01";
                     // document.getElementById("sliderid").innerHTML="2";
 				}
 				function change1(){
@@ -19,7 +19,7 @@
 				    var gettitle=document.getElementById("flex-title-display");
                     gettitle.innerHTML="Technology";
                     // document.getElementById("distitle").style.left="60px";
-                    document.getElementById("leftvalue").innerHTML="02";   
+                    document.getElementById("left").innerHTML="02";   
 				}
 				function change2(){
 					var title3=document.getElementById("mychange").src="Images\\Fitness.jpg";
@@ -51,12 +51,13 @@
 				}
 
 		var mainslider=document.getElementById("sliderid");
-		var valueslider=document.getElementById("leftvalue");
+		var valueslider=document.getElementById("left");
 		valueslider.innerHTML=mainslider.value;
 		mainslider.oninput=function(){
 			valueslider.innerHTML=this.value;
 		}
-		
+		// var min = document.getElementById("slider").min;
+		// min=10;
 		function myFunction(x) {
 			x.classList.toggle("change");
 		  }
