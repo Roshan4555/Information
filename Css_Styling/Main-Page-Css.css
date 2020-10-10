@@ -2,7 +2,6 @@
         cursor: grab;
 		box-sizing: border-box;
 		margin: 0 auto;
-        /* height: 100vh; */
 	}
 	.main-container{
 		width: 100%;
@@ -15,7 +14,6 @@
 		height: 100vh;
 		overflow: hidden;
 		object-fit: cover;
-		/* background-size:cover; */
 		position: fixed;
 	}
     
@@ -60,19 +58,19 @@ body:hover{
     	display: flex;
         width: 180px;
 		height: 300px;
-		padding: 30px;
+		padding: 34px;
 		opacity: 0.8;
         justify-content: center;
        }
     .box a{
 		color: whitesmoke;
-		font-size: 20px;
+		font-size: 22px;
     	font-family: sans-serif;
     	justify-content: center;
     	text-decoration: none;
 	}
 	.box-text-place{
-        padding: 100px;
+        padding: 150px;
 	}
 	.flex-title-display-place{
         position: relative;
@@ -82,7 +80,7 @@ body:hover{
     .flex-title-display{
         position: fixed;
         text-align: center;
-        padding-top: 180px;
+		bottom: 100px;
         min-width: 100%;
 	}
 	.flex-title-display b{
@@ -101,10 +99,16 @@ body:hover{
         font-size: 27px;
         font-family: sans-serif;
 	}
-	
+	.footer-display{
+		position: fixed;
+		text-align: center;
+        width: auto;
+		height: 30px;
+		bottom: 50px;
+		padding-left: 15px;
+	}
 	.slider-place{
-		margin-top: 252px;
-		left: 110px;
+		padding-left: 110px;
 		position: fixed;
 		text-align: center;
 	}
@@ -124,16 +128,13 @@ body:hover{
 	.left{
         position: fixed;
 		color: whitesmoke;
-		float: left;
-        margin-top: 250px;
-        padding-left: 95px;
+	    padding-left: 95px;
     }
     .right{
         color: whitesmoke;
         position: fixed;
-        float: right;
-        margin-top: 250px;
-        right: 100px;
+        /* float: right; */
+        padding-left: 200px;
         font-size: 10px;
 	}
 	#leftvalue{
@@ -141,9 +142,9 @@ body:hover{
 	} 
 	.bar-option-container{
 		position: fixed;
-		float: right;
+		/* float: right; */
 		top: 5px;
-		right: 15px;
+		right: 35px;
 		cursor: pointer;
 	}
 	.bar1, .bar2, .bar3 {
@@ -153,6 +154,22 @@ body:hover{
 		background-color:whitesmoke;
 		margin: 4px 0;
 		transition: 0.4s;
+	  }
+	  #myCanvas{
+		  display: none;
+	  }
+	  .change .bar1 {
+		-webkit-transform: rotate(-35deg) translate(-13px, 4px);
+		transform: rotate(-35deg) translate(-13px, 4px);
+	  }
+	  
+	  .change .bar2 {
+		  opacity: 0;
+		}
+	  
+	  .change .bar3 {
+		-webkit-transform: rotate(20deg) translate(-9px, -3px);
+		transform: rotate(20deg) translate(-9px, -3px);
 	  }
 }
 	@media only screen and (min-width:992px){
@@ -191,7 +208,7 @@ body:hover{
 		.flex-title-display{
 			position: fixed;
 			text-align: center;
-			padding-top: 50px;
+			bottom: 40px;
 			min-width: 100%;
 		}
 		.flex-title-display b{
@@ -210,9 +227,16 @@ body:hover{
 			font-size: 35px;
 			font-family: sans-serif;
 		}
+		.footer-display{
+			position: fixed;
+			display: inline-block;
+			width: 300px;
+			height: 50px;
+			bottom: 10px;
+			left: 620px;
+		}
 		.slider-place{
-			padding-top: 50px;
-			left: 700px;
+			padding-top: 7px;
 			position: fixed;
 			text-align: center;
 		}
@@ -224,7 +248,7 @@ body:hover{
 			text-align: center;
 			position: fixed;
 			height: 2px;
-			width: 150px;
+			width: 80px;
 		}
 		.slider::-webkit-slider-thumb{
 			display: none;
@@ -244,36 +268,36 @@ body:hover{
 			margin: 6px 0;
 			transition: 0.4s;
 		  }
+		  
 		  .left{
 			position: fixed;
 			color: whitesmoke;
-			margin-top: 295px;
-			padding-left: 670px;
-		}
+			}
 		.right{
 			color: whitesmoke;
 			position: fixed;
-			float: right;
-			margin-top: 295px;
-			right: 645px;
 			font-size: 15px;
 		}
 		#leftvalue{
 			font-size: 15px;
 		}
+		.change .bar1 {
+			-webkit-transform: rotate(-34deg) translate(-9px, 6px);
+			transform: rotate(-34deg) translate(-9px, 6px);
+		  }
+		  
+		  .change .bar2 {
+			  opacity: 0;
+			}
+		  
+		  .change .bar3 {
+			-webkit-transform: rotate(29deg) translate(-8px, -7px);
+			transform: rotate(29deg) translate(-8px, -7px);
+		  }
+		  #myCanvas{
+			display: block;
+		}
 
 	}		
-	  .change .bar1 {
-		-webkit-transform: rotate(-34deg) translate(-9px, 6px);
-		transform: rotate(-34deg) translate(-9px, 6px);
-	  }
-	  
-	  .change .bar2 {
-		  opacity: 0;
-		}
-	  
-	  .change .bar3 {
-		-webkit-transform: rotate(29deg) translate(-8px, -7px);
-		transform: rotate(29deg) translate(-8px, -7px);
-	  }
+	 
 	 
