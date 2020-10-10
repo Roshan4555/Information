@@ -2,7 +2,7 @@
 		margin: 0 auto;
 		background-color: #000;
 		cursor: grab;
-		overflow-x: hidden;
+		overflow: hidden;
     }
     
 	.location-name-place p{
@@ -94,9 +94,10 @@
      }
      /* .things-to-do-place{
          width: 1000px;
+         display: flex;
      } */
      .things-to-do-place #try {
-        position: fixed; 
+        /* position: fixed;  */
         /* width: 100%; */
      	height: 340px;
      	margin-top: 5px;
@@ -124,9 +125,7 @@
             top: 10px;
             /* text-align: center; */
         }
-        .hrline-display{
-
-        }
+        
         .downline {
             position: fixed;
             background-color: gray;
@@ -142,7 +141,7 @@
             margin-left: 50px;
             }
             .image-container{
-                width: 1600px;
+                width: 100%;
                 height: 320px;
                 padding-top: 200px;
                 margin-left: 80px;
@@ -160,15 +159,38 @@
                 overflow: hidden;
             }
             .image-box img{
-                width: 340px;
+                width: 200px;
                 height: 320px;
                 transition: transform 2s;
             }
             .things-box .places-box img{
                border-radius: 10px;
-               width: 340px;
+               width: 200px;
                height: 320px;
             }
+            .things-to-do-place #try {
+                position: fixed; 
+                 height: 340px;
+                 margin-top: 5px;
+                 margin-left: 0px;
+                 display: flex;
+                 overflow: hidden;
+             }
+             .things-box{
+                width: 200px;
+                height: 320px;
+                cursor: pointer;
+                border:1px ridge rgba(255,255,255,0.1);
+                border-radius: 10px;
+             }
+             /* .places-box img{
+                 width: 100px;
+                 height: 50px;
+             } */
+             #try{
+                padding-left:75px;
+                 
+             }
     }
      .things-place{
      	margin-top: 70px;
