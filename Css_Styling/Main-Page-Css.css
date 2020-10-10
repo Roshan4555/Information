@@ -173,6 +173,7 @@ body:hover{
 		-webkit-transform: rotate(20deg) translate(-9px, -3px);
 		transform: rotate(20deg) translate(-9px, -3px);
 	  }
+	}
 	  @media only screen and (min-width:992px){
 		.flex-container{
 			opacity: 0.9;
@@ -242,7 +243,7 @@ body:hover{
 			text-align: center;
 			position: fixed;
 			height: 2px;
-			width: 80px;
+			width: 70px;
 		}
 		.slider::-webkit-slider-thumb{
 			display: none;
@@ -262,24 +263,29 @@ body:hover{
 			margin: 6px 0;
 			transition: 0.4s;
 		  }
-		 
+		  .footer-display{
+			position: fixed;
+			display: inline-block;
+			align-items: center;
+			justify-content: center;
+			width: 150px;
+			height: 30px;
+			bottom: 40px;
+			left:48% ;
+		}	 
 		  .left{
 			  align-items: center;
 			  justify-content: center;
-			  /* left: 50%; */
 			  font-size: 15px;
 			position: fixed;
 			color: whitesmoke;
 			}
 		.right{
-			/* right: 40%; */
-			
 			color: whitesmoke;
 			position: fixed;
 			font-size: 15px;
 		}
-		#leftvalue{
-		}
+
 		.change .bar1 {
 			-webkit-transform: rotate(-34deg) translate(-9px, 6px);
 			transform: rotate(-34deg) translate(-9px, 6px);
@@ -298,7 +304,7 @@ body:hover{
 		}
 	
 	}		
-}
+
 	
 	 
 	 
