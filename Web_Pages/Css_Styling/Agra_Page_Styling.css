@@ -2,7 +2,7 @@
 		margin: 0 auto;
 		background-color: #000;
 		cursor: grab;
-		overflow: hidden;
+		overflow-x: hidden;
     }
     
 	.location-name-place p{
